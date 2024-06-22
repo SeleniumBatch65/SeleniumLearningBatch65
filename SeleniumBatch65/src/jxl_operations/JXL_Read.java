@@ -13,7 +13,7 @@ public class JXL_Read {
 
 	@Test
 	public void read() throws BiffException, IOException {
-		
+		//Sample	
 		FileInputStream fis = new FileInputStream("C:\\Users\\admin\\OneDrive\\Desktop\\Cities.xls");
 		
 		Workbook wb = Workbook.getWorkbook(fis);
@@ -26,8 +26,6 @@ public class JXL_Read {
 		System.out.println("Total Rows: "+ totalRows);
 		System.out.println("Total Rows: "+ totalColumns);
 		//String city = s.getCell(0, 2).getContents();
-		
-		//	System.out.println(city);
 		
 		for(int i=0; i<s.getRows(); i++) {
 			
